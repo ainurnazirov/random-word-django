@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Случайное слово</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<p class = "text-justify"> Случайное слово: {{ word }}</p>
+<form action="" method="POST">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-secondary"> Сгенерировать слово </button>
+</form>
+</body>
+</html>
